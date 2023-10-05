@@ -27,9 +27,10 @@
   }
   
   h2 {
-    color: #FFF;
+    color: var(--main-color);
     text-align: center;
     margin: 2rem 0;
+    font-size: 4rem;
   }
   
   .input-container {
