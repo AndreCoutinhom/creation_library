@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Criações</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h2>Criações de André Coutinho</h2>
+    <div class="input-container">
+          <input type="text" name="show-name" id="show-name" placeholder="Procure por palavras chave...">
+    </div>
+    <div class="showOnlyFavorites">
+      <h3>Essas são algumas de minhas criações.
+      <br>
+        Se quiser saber mais, entre em contato: andre.coutihnom@gmail.com.
+      </h3>
+    </div>
+    <div class="shows">
+      <div class="show">
+        <div class="show-informations">
+          <div class="show-text">
+            <h4>Colete Bombus</h4>
+          </div>
+        </div>
+        <div class="show-description">
+          <div class="img-box">
+            <img src="bombus.png" alt="">
+
+        </div>
+          <span>Uma roupa que aumenta as capacidades sensoriais do usuário. Usando um sistema com processador Arduino, sensor de proximidade e motor de vibração, objetos na parte de trás são detectados. O usuário sente uma vibração de ritmo em conformidade com o nível de proximidade da colisão. O sistema foi muito bem avaliado pelos acadêmicos e usuários de teste envolvidos, tendo sido aceito como parte do congresso CONTECSI na USP como estudo envolvendo sistemas eletrônicos.</span>
+        </div>
+      </div>
+      
+      </div>
+    <div class="shows">
+      <div class="show">
+        <div class="show-informations">
+          <div class="show-text">
+            <h4>Utoph</h4>
+          </div>
+        </div>
+        <div class="show-description">
+          <div class="img-box">
+            <img src="utoph.png" alt="">
+
+        </div>          
+        <span>Projeto Integrador coordenado pelo professor Kledir Salgado, realizado durante a graduação em Design de Moda dentro de um grupo composto pelos seguintes designers: André Coutinho de Macedo Silva, Bárbara Freire de Andrade, Beatriz Santos Matos e Carolina Ventino Cardoso. Foram realizadas extensas coleções de roupas ergonômicas voltadas para mobilidade urbana, nas quais um look foi escolhido para ser desenvolvido como peça física.</span>
+        </div>
+      </div>
+
+      </div>
+    <div class="shows">
+      <div class="show">
+        <div class="show-informations">
+          <div class="show-text">
+            <h4>O.C.I.M</h4>
+          </div>
+        </div>
+        <div class="show-description">
+          <div class="img-box">
+            <img src="OCIM.png" alt="">
+
+        </div>           
+        <span>Centro de pesquisa em roupas eletrônicas fictício conceituado como parte de uma atividade da disciplina de análise de tendências do professor Kledir Salgado. O.C.I.M significa Organização de Ciências Inovadoras na Moda. Os looks desenhados refletem diferentes fatores humanos que podem ser aprimorados através da aplicação de tecnologias avançadas em roupas: Resistência, Força, Velocidade, Suporte e Controle. Os looks são descritos como trajes com fechamento magnético, condução elétrica e alteração de forma</span>
+        </div>
+      </div>
+
+      </div>
+    <div class="shows">
+      <div class="show">
+        <div class="show-informations">
+          <div class="show-text">
+            <h4>Maquetes Quânticas</h4>
+          </div>
+        </div>
+        <div class="show-description">
+          <div class="img-box">
+            <img src="maquetes_quânticas.png" alt="">
+
+        </div>              
+        <span>Foi fornecida uma atividade na disciplina de poéticas visuais lecionada pelo professor Kledir Salgado em que os alunos deveriam fazer ensaios de maquetes têxteis que refletissem nas poéticas visuais tradicionais do figurino. Relacionei cada uma das poéticas com diferentes áreas da ciência, aplicando conhecimentos de cada ciência na produção do efeito de cada maquete. Organizei o "Belo e Sublime" em retalhos simétricos representando o retângulo de ouro na matemática, o "Exótico" escurecendo o algodão cru com fogo representando os efeitos do desmatamento na botânica, as "Ruínas" realizando um congelamento acelerado improvisado (sal e água) no tecido representando a manipulação da termodinâmica na química, o "Grotesco" fazendo furos em tecido sintético usando a luz do sol contra uma lupa representando a influência do sol na Terra, e o "Kitsch" imprimindo um circuito eletrônico usando uma máquina a laser representando a engenharia da computação.</span>
+        </div>
+      </div>
+
+      </div>
+    <div class="shows">
+      <div class="show">
+        <div class="show-informations">
+          <div class="show-text">
+            <h4>Educação em Personagens de Games</h4>
+          </div>
+        </div>
+        <div class="show-description">
+          <div class="img-box">
+            <img src="educação_em_personagens_de_games.png" alt="">
+
+        </div>           
+        <span>Uma pesquisa científica realizada sob a orientação dos professores Adalberto Bosco e Marvin Schneider no projeto de iniciação científica "Desenvolvimento de Game para Ensino de Gestão de Projetos seguindo Boas Práticas de Game Design". O artigo propõe uma análise de como a interação de jogadores de videogame com seus personagens pode mudar sua performance educativa. Foi utilizado como base o estudo de Jean Piaget diante da cognição e afetividade na pedagogia. O artigo obteve resultados bem embasados, recebendo certificado de mérito acadêmico no congresso de iniciação científica do Centro Universitário Senac.</span>
+        </div>
+      </div>
+
+       </div>
+
+    
+      
+  </main>
+  <!-- ... (seu código HTML) ... -->
+<script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const searchBar = document.getElementById('show-name');
+        const shows = document.querySelectorAll('.show');
+
+        searchBar.addEventListener('input', function () {
+          const searchTerm = searchBar.value.toLowerCase().trim();
+
+          shows.forEach(function (show) {
+            const showTitle = show.querySelector('.show-text h4').textContent.toLowerCase();
+            const showStory = show.querySelector('.story span').textContent.toLowerCase();
+            const showMusic = show.querySelector('.music span').textContent.toLowerCase();
+
+            if (showTitle.includes(searchTerm) || showStory.includes(searchTerm) || showMusic.includes(searchTerm)) {
+              show.style.display = 'flex';
+            } else {
+              show.style.display = 'none';
+            }
+          });
+        });
+
+        searchBar.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter') {
+            const searchTerm = searchBar.value.toLowerCase().trim();
+
+            const matchingShow = [...shows].find(function (show) {
+              const showTitle = show.querySelector('.show-text h4').textContent.toLowerCase();
+              const showStory = show.querySelector('.story span').textContent.toLowerCase();
+              const showMusic = show.querySelector('.music span').textContent.toLowerCase();
+              return showTitle.includes(searchTerm) || showStory.includes(searchTerm) || showMusic.includes(searchTerm);
+            });
+
+            
+            if (matchingShow) {
+              matchingShow.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        });
+      });
+    </script>
+
+
+
+</body>
+</html>
