@@ -13,9 +13,7 @@
 <body>
   <main>
     <h2>Criações de André Coutinho</h2>
-    <div class="input-container">
-          <input type="text" name="show-name" id="show-name" placeholder="Procure por palavras chave...">
-    </div>
+
     <div class="showOnlyFavorites">
       <h3>Essas são algumas de minhas criações.
       <br>
@@ -111,49 +109,3 @@
     
       
   </main>
-  <!-- ... (seu código HTML) ... -->
-<script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const searchBar = document.getElementById('show-name');
-        const shows = document.querySelectorAll('.show');
-
-        searchBar.addEventListener('input', function () {
-          const searchTerm = searchBar.value.toLowerCase().trim();
-
-          shows.forEach(function (show) {
-            const showTitle = show.querySelector('.show-text h4').textContent.toLowerCase();
-            const showStory = show.querySelector('.story span').textContent.toLowerCase();
-            const showMusic = show.querySelector('.music span').textContent.toLowerCase();
-
-            if (showTitle.includes(searchTerm) || showStory.includes(searchTerm) || showMusic.includes(searchTerm)) {
-              show.style.display = 'flex';
-            } else {
-              show.style.display = 'none';
-            }
-          });
-        });
-
-        searchBar.addEventListener('keydown', function (event) {
-          if (event.key === 'Enter') {
-            const searchTerm = searchBar.value.toLowerCase().trim();
-
-            const matchingShow = [...shows].find(function (show) {
-              const showTitle = show.querySelector('.show-text h4').textContent.toLowerCase();
-              const showStory = show.querySelector('.story span').textContent.toLowerCase();
-              const showMusic = show.querySelector('.music span').textContent.toLowerCase();
-              return showTitle.includes(searchTerm) || showStory.includes(searchTerm) || showMusic.includes(searchTerm);
-            });
-
-            
-            if (matchingShow) {
-              matchingShow.scrollIntoView({ behavior: 'smooth' });
-            }
-          }
-        });
-      });
-    </script>
-
-
-
-</body>
-</html>
